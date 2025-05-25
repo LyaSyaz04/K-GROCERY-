@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <header>
+
+        <nav class="navbar">
+           <a href="index.html">home</a>
+           <a href="about.html">about</a>
+           <a href="categories.html">categories</a>
+           <a href="products.html">products</a>
+           <a href="orderform.html">order form</a>
+        </nav>
+
+  
+</header>
+        <style>
+
+            :root {
+                --red: red;
+            }
+
+            *{
+               margin:0; padding:0;
+               box-sizing: border-box;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               outline: none; border:none;
+               text-decoration: none;
+               text-transform: capitalize;
+               transition: .2s linear;
+            }
+
+            html {
+                font-size: 85%;
+                scroll-behavior: smooth;
+                scroll-padding-top: 6rem;
+                overflow-x: hidden; 
+            }
+
+            body {
+                background: url(background_homepage2.jpg);
+            }
+
+            header {
+                padding: 2rem 25%;
+                z-index: 1000;
+                color: #333;
+                font-weight: bolder;
+            }
+
+            header .navbar a {
+                padding:0 1.0rem;
+                color: rgb(247, 244, 245);
+                font-size: 150%;
+            }
+
+            header .navbar a:hover {
+                color: var(--red);
+            }
+
+
+            .about {
+               align-items: center;
+               padding: 3rem 10%;
+            }
+
+            .about .content {
+               min-width: 300px;
+            }
+
+            .about .content h1 {
+               font-size: 45px;
+               color: rgb(104, 11, 42);
+            }
+
+            .about .content span {
+               font-size: 25px;
+               padding:1rem 0;
+               line-height: 1.0; 
+               color: rgb(155, 43, 71);
+            }
+
+    
+        </style>
+    </head>
+<body>
+    <section class="about" id="about">
+
+    <div class="content">
+        <h1>Why Choose Us?</h1>
+        <span>We stock only the freshest produce, dairy, and frozen foods</span> 
+        <span>sourced daily from trusted local suppliers to ensure</span> 
+        <span>quality and taste in every bite.</span>
+        <span>Our user-friendly platform makes it simple to browse, select,</span>
+        <span>and order your groceries saving you time and effort.</span>
+        <span>By shopping with us, you support a local business that reinvests</span>
+        <span>in the community and values every customer.</span>
+
+        <img src="freshgroceries.png" alt="fresh groceries" class="about-image"/>
+
+        
+
+    </div>
+</section>
+</body>
+</html>

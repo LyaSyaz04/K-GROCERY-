@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "Enjoy Your Shopping!";
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "ANNYEONGHASE-YO TO K-GROCERY SHOP!";
+        }
+    </script>
+
+
+<style>
+    :root {
+        --red: red;
+    }
+
+    *{
+        margin:0; padding:0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        outline: none; border:none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: .2s linear;
+    }
+
+    html {
+        font-size: 100%;
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+        overflow-x: hidden; 
+    }
+
+    section {
+        padding: 2rem 9%;
+    }
+
+    header {
+        position: fixed;
+        top:0; left:0; right:0;
+        background: #ffffff;
+        padding: 2rem 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        color: #333;
+        font-weight: bolder;
+    }
+
+    header .logo {
+        font-size: 20px;
+        color: rgb(59, 24, 13);
+        font-weight: bolder;
+    }
+
+    header .logo span {
+        color:var(--red);
+    }
+
+    header .navbar a {
+        padding:0 1.0rem;
+        color: rgb(121, 5, 40);
+    }
+
+    header .navbar a:hover {
+        color:var(--red);
+    }
+
+    .home {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        background: url(background_homepage2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home .content {
+        max-width: 50rem;
+    }
+
+    .home .content h1 {
+        font-size: 45px;
+        color: rgb(104, 11, 42)
+        
+    }
+
+    .home .content span {
+        font-size: 25px;
+        padding:1rem 0;
+        line-height: 5.0; 
+        color: rgb(187, 32, 58);
+        
+    }
+
+
+</style>
+</head>
+<header>
+
+    <a href="#" class="logo">K-Grocery<span></span></a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="categories.html">categories</a>
+        <a href="products.html">products</a>
+        <a href="orderform.html">order form</a>
+    </nav>
+
+  
+</header>
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h1 onmouseover="mOver(this)" onmouseout="mOut(this)">ANNYEONGHASE-YO TO K-GROCERY SHOP!</h1>
+        <span>Groceries That Slay, Just Like a Comeback Stage</span>
+
+    </div>
+</section>
+
+</html>

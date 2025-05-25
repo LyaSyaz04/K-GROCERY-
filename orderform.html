@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="categories.html">Categories</a>
+    <a href="products.html">Products</a>
+
+    <script>
+    function validateForm() {
+        const deliveryOptions = document.getElementsByName("delivery");
+        const address = document.getElementsByName("address")[0].value.trim();
+
+        let isHomeDelivery = false;
+        for (let i = 0; i < deliveryOptions.length; i++) {
+            if (deliveryOptions[i].checked && deliveryOptions[i].value === "home delivery") {
+                isHomeDelivery = true;
+                break;
+             }
+        }
+
+        if (isHomeDelivery && address === "") {
+            alert("Address must be filled out if you choose home delivery.");
+            return false;
+        }
+
+        else {
+            alert("Thank you for your order!");
+            return true;
+        }
+    }
+    </script>
+
+<style>
+
+    :root {
+        --red: red;
+    }
+
+    fieldset {
+        background: pink;
+        border: 2px solid #4d031f;
+        border-radius: 10px;
+        padding: 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: none;
+        border-left: 10px solid #70072a;
+        background: linear-gradient(to right, #f85b97, #fff);
+    }
+
+    body {
+        background: url(background_homepage2.jpg);
+    }
+
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(104, 11, 42);
+    }
+
+    a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 30px;
+        color:#fff;
+        padding: 30px;
+    }
+
+    a:hover {
+        color: var(--red);
+    }
+</style>
+
+        
+</head>
+<body>
+<fieldset>
+    <h1>Order Form</h1>
+    <p><b>Customer Info</b></p>
+
+    <form action="process.php" onsubmit="return validateForm()" method="get">
+    Name: <input type="text" name="name" required><br><br>
+    Email: <input type="email" name="email"><br><br>
+    Phone: <input type="tel" name="phone" required><br><br>
+    Address: <br> <textarea name="address" rows="10" cols="30" placeholder="Required if home delivery"></textarea><br><br>
+
+    <b>Grocery Items</b> <br>
+    <input type="checkbox" name="item1" value="Samyang Ramyeon"> Samyang Ramyeon<br>
+    <input type="checkbox" name="item2" value="Cellophane noodles"> Cellophane noodles <br>
+    <input type="checkbox" name="item3" value="Gochujang"> Gochujang<br>
+    <input type="checkbox" name="item4" value="Sesame oil"> Sesame oil<br>
+    <input type="checkbox" name="item5" value="Dumplings"> Dumplings<br>
+    <input type="checkbox" name="item6" value="Tteok"> Tteok<br>
+    <input type="checkbox" name="item7" value="Banana milk"> Banana milk<br>
+    <input type="checkbox" name="item8" value="Korean coffee drinks"> Korean coffee drinks<br>
+    <input type="checkbox" name="item9" value="Milk"> Milk<br>
+    <input type="checkbox" name="item10" value="Flavored yogurts"> Flavored yogurts<br>
+    <input type="checkbox" name="item11" value="Cheese"> Cheese<br>
+    <input type="checkbox" name="item12" value="Eggs"> Eggs<br>
+    <input type="checkbox" name="item13" value="Napa cabbage"> Napa cabbage<br>
+    <input type="checkbox" name="item14" value="Garlic"> Garlic<br>
+    <input type="checkbox" name="item15" value="Perilla Leaves"> Perilla Leaves<br>
+    <input type="checkbox" name="item16" value="Chili Peppers"> Chili Peppers<br><br>
+
+    <b>Delivery Options</b><br>
+    <input type="radio" name="delivery" value="pickup"> Pickup<br>
+    <input type="radio" name="delivery" value="home delivery"> Home Delivery<br><br>
+
+    <b>Delivery Date</b><br>
+    <input type="date" name="date"><br><br>
+
+    <b>Additional Notes</b><br>
+    <textarea name="notes" rows="10" cols="30"></textarea><br><br>
+
+    <input type="submit" value="Place Order">
+
+
+    </form>
+</fieldset>
+</body>
+</html>
+

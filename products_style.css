@@ -1,0 +1,63 @@
+:root {
+    --red:red;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body {
+    background: url(background_homepage2.jpg);
+}
+
+h1 {
+    text-align: center;
+    font-size: 400%;
+    color: rgb(104, 11, 42);
+}
+
+
+table {
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+th {
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(199, 57, 81);
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    background-color: pink;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.navbar a {
+    padding: 30px;
+    color: rgb(247, 244, 245);
+    font-size: 150%;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+
+
+}
+
+.navbar a:hover {
+    color: var(--red);
+}

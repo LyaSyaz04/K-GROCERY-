@@ -1,0 +1,79 @@
+:root {
+    --red: red;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body {
+    background: url(background_homepage2.jpg);
+}
+
+h1 {
+    text-align: center;
+    font-size: 400%;
+    color: rgb(104, 11, 42);
+}
+
+
+.product-categories .categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.0rem;
+}
+
+.product-categories .categories-list .categories-content {
+    flex: 20rem;
+    box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+    background: pink;
+}
+
+.product-categories .categories-list .categories-content .categories-image {
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+    display: block; 
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 250%;
+}
+
+a {
+    padding: 30px;
+    color: rgb(128, 6, 46);
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.navbar a {
+    padding: 30px;;
+    color: rgb(247, 244, 245);
+    font-size: 150%;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+
+}
+
+.navbar a:hover {
+    color: var(--red);
+}
+
+
+
+
+
+
